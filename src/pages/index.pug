@@ -3,15 +3,17 @@ extends common/layout
 block content
   section.section_01
     .codedesign
+      .wht_u_nd Что нужно тебе?#[br]#[hr]
+      
       .code.big_font
         p
-          span +
+          span.code_action +
           | Code
           
       .design.big_font
         p Design
-          span -
+          span.code_action -
     svg(viewBox='0 0 1000 550' preserveAspectRatio="none")
-      path(d='M 0 800 V 0 300 C 250 200, 400 300, 480 140 S 800 60, 1000 0  V 1100 800 z')
+      path.action(d='M 0 800 V 0 300 C 250 200, 400 300, 480 140 S 800 60, 1000 0  V 1100 800 z')
       // path(d='M 0 800 V 0 300 C 250 200, 400 300, 480 140 S 800 60, 1000 0  V 1100 800 z') 
   section.section_02
