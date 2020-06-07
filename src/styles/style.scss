@@ -4,115 +4,115 @@
 
 @import "common/footer";
 
+@import "common/section_01";
+
 html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.section_01{
-  padding-top: 250px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: auto;
- 
-  .codedesign{
-    position: absolute;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-    margin-top: 150px;
-    top: 5vw;
-
-    @media (min-width: 1168px) {
-      height: 400px;
-      @media (min-width: 1600px) {
-        height: 500px;
-        @media (min-width: 2000px) {
-          height: 600px;
-        }
-      }
-    }
-    .wht_u_nd{
-      font-size: 54px;
-      font-weight: 600;
-      font-family: 'Fira Sans', sans-serif;
-      color: #000;
-      display: flex;
-      flex-flow: column nowrap;
-      position: absolute;
-      top: 0;
-
-      hr{
-        height: 6px;
-        width: 60px;
-        border-radius: 10px;
-        background-color: #000;
-        margin: 20px 10px;
-      }
-    }
-    .code{
-      display: flex;
-      color: #5052d0;
-    }
-    .design{
-      display: flex;
-      align-self: flex-end;
-      color: white;
-    }
-    .big_font{
-      font-size: 84px;
-      font-family: 'Fira Sans', sans-serif;
-      font-weight: 600;
-      padding: 50px;
-      z-index: 1;
-      
-      
-      @media (min-width: 1168px) {
-        font-size: 102px;
-        @media (min-width: 1600px) {
-          font-size: 154px;
-          @media (min-width: 2000px) {
-            font-size: 220px;
-          }
-        }
-      }
-      p{
-        margin: 0;
-        span{
-          font-weight: lighter;
-          font-size: 0.2em;
-          color: black;
-          border: 1px solid black;
-          border-radius: 0.5em;
-          border-color: black;
-          padding: 0 0.4em;
-        }
-      }
-    }
-  }
-  svg{
-    width: 100%;
-    height: auto;
-    top: 100px;
-    overflow: hidden;
-    z-index: -5;
-    path{
-      width: 100%;
-      fill: #5052d0;
-    }
-   
-  }
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .section_02{
   width: 100%;
-  height: 5000px;
   background-color: white;
+  padding: 200px 0;
+  display: flex;
+  justify-content: center ;
+}
+
+.info{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  margin-right: 40px;
+}
+
+.info_content{
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 50px;
+  padding: 100px 0;
+  .info_content_text{
+    padding: 0 50px;
+  }
+  .text{
+    padding: 20px 0;
+  }
+}
+
+.numb{
+  margin-right: 30px;
+}
+
+.numb_count{
+  font-size: 24px;
+}
+
+.visual{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.pc{
+  width: 400px;
+}
+.mockup{
+  margin-top: 15px;
+  position: absolute;
+  width: 380px;
+  height: 223px;
+  overflow: hidden;
+  .mockup_imgs{
+    width: 100%;
+
+    img{
+    width: 100%;
+    }
+  }
+  
+}
+
+
+
+
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+}
+
+.title{
+  font-size: 44px;
+  font-weight: 600;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000;
+}
+
+.title_2{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.text{
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.fixed{
+  position: fixed;
+  top: 200px;
+}
+
+.content_to_bottom{
+  align-items: flex-end;
+}
+
+.section_03{
+  height: 2000px;
+}
+
+.purple{
+  color: #5052d0;
 }

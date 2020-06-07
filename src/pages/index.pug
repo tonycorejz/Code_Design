@@ -3,7 +3,7 @@ extends common/layout
 block content
   section.section_01
     .codedesign
-      .wht_u_nd Что нужно тебе?#[br]#[hr]
+      .wht_u_nd.title Что нужно тебе?#[br]#[hr]
       
       .code.big_font
         p
@@ -17,3 +17,30 @@ block content
       path.action(d='M 0 800 V 0 300 C 250 200, 400 300, 480 140 S 800 60, 1000 0  V 1100 800 z')
       // path(d='M 0 800 V 0 300 C 250 200, 400 300, 480 140 S 800 60, 1000 0  V 1100 800 z') 
   section.section_02
+    .content
+      .info
+        .title Наши работы
+        .info_content
+          .numb
+            .numb_count 1/3
+            .numb_figures
+              .figure
+          .info_content_text
+            .title_2 Профессиональный барбершоп в Новосибирске
+              .text Landing page
+      .visual
+        img.pc(
+          src="img/section_02_pc.png"
+        )
+        .mockup
+          .mockup_imgs
+            img(
+              src="img/DVABRO2.png"
+            )
+            img(
+              src="img/DVABRO2.png"
+            )
+            img(
+              src="img/DVABRO2.png"
+            )
+  section.section_03
