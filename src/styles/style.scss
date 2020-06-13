@@ -6,81 +6,80 @@
 
 @import "common/section_01";
 
-html, body {
+html,body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Fira Sans', sans-serif;
 }
 
-.section_02{
+.section_02 {
   width: 100%;
   background-color: white;
-  padding: 200px 0;
+  padding: 200px 0 0 0;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
+  .content {
+    height: 500px;
+  }
 }
 
-.info{
+.info {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
+  z-index: 10;
   width: 50%;
+  height: 1500px;
   margin-right: 40px;
-}
-
-.info_content{
-  display: flex;
-  flex-flow: row nowrap;
   font-size: 50px;
-  padding: 100px 0;
-  .info_content_text{
-    padding: 0 50px;
-  }
-  .text{
+  padding: 100px 50px;
+  color: white;
+  .text {
     padding: 20px 0;
   }
 }
 
-.numb{
-  margin-right: 30px;
-}
-
-.numb_count{
-  font-size: 24px;
-}
-
-.visual{
+.sec_2_main {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 50%;
-}
-.pc{
-  width: 400px;
-}
-.mockup{
-  margin-top: 15px;
+  flex-flow: column nowrap;
   position: absolute;
-  width: 380px;
-  height: 223px;
-  overflow: hidden;
-  .mockup_imgs{
-    width: 100%;
-
-    img{
-    width: 100%;
-    }
+  width: 80%;
+  .title{
+    margin-bottom: 20px;
   }
-  
 }
-
-
-
 
 .content{
-  display: flex;
-  flex-flow: row nowrap;
-  width: 80%;
+  z-index: 1;
+
+  .back_1{
+    background-image: url(../img/DVABRO2.png);
+  }
+  .back_2{
+    background-image: url(../img/sunPlace.png);
+  }
+  .back_3{
+    background-image: url(../img/tehnoUniv.png);
+  }
+  .back_1,
+  .back_3,
+  .back_2{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  
+  .layout{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    background-color: rgba(0,0,0,.55);
+  }
 }
 
 .title{
@@ -92,21 +91,18 @@ html, body {
 
 .title_2{
   font-weight: 600;
-  font-size: 24px;
+  font-size: 44px;
 }
 
 .text{
   font-weight: lighter;
   font-size: 24px;
+  z-index: 10;
 }
 
 .fixed{
   position: fixed;
   top: 200px;
-}
-
-.content_to_bottom{
-  align-items: flex-end;
 }
 
 .section_03{
@@ -115,4 +111,8 @@ html, body {
 
 .purple{
   color: #5052d0;
+}
+
+.content_to_bottom{
+  align-items: flex-end;
 }
