@@ -1,0 +1,85 @@
+.section_02 {
+  width: 100%;
+  background-color: white;
+  padding: 200px 0 0 0;
+  display: flex;
+  justify-content: center;
+  .content {
+    height: 500px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  z-index: 10;
+  width: 80%;
+  height: 1500px;
+
+  font-size: 50px;
+  padding: 100px 50px;
+  color: white;
+  .text {
+    padding: 20px 0;
+  }
+  .info_content{
+    width: 80%;
+    align-self: center;
+  }
+}
+
+.sec_2_main {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  width: 80%;
+  .title{
+    margin-bottom: 20px;
+  }
+}
+
+.content{
+  z-index: 1;
+
+  .back_1{
+    background-image: url(../img/DVABRO2.png);
+  }
+  .back_2{
+    background-image: url(../img/sunPlace.png);
+  }
+  .back_3{
+    background-image: url(../img/tehnoUniv.png);
+  }
+  .back_1,
+  .back_3,
+  .back_2{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  
+  .layout{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    background-color: rgba(0,0,0,.55);
+  }
+}
+
+.purple{
+  color: #5052d0;
+}
+
+.content_to_bottom{
+  align-items: flex-end;
+}
+
+.fixed{
+  position: fixed;
+  top: 200px;
+}

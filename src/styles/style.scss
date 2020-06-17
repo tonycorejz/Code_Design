@@ -5,81 +5,13 @@
 @import "common/footer";
 
 @import "common/section_01";
+@import "common/section_02";
 
 html,body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Fira Sans', sans-serif;
-}
-
-.section_02 {
-  width: 100%;
-  background-color: white;
-  padding: 200px 0 0 0;
-  display: flex;
-  justify-content: center;
-  .content {
-    height: 500px;
-  }
-}
-
-.info {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  z-index: 10;
-  width: 50%;
-  height: 1500px;
-  margin-right: 40px;
-  font-size: 50px;
-  padding: 100px 50px;
-  color: white;
-  .text {
-    padding: 20px 0;
-  }
-}
-
-.sec_2_main {
-  display: flex;
-  flex-flow: column nowrap;
-  position: absolute;
-  width: 80%;
-  .title{
-    margin-bottom: 20px;
-  }
-}
-
-.content{
-  z-index: 1;
-
-  .back_1{
-    background-image: url(../img/DVABRO2.png);
-  }
-  .back_2{
-    background-image: url(../img/sunPlace.png);
-  }
-  .back_3{
-    background-image: url(../img/tehnoUniv.png);
-  }
-  .back_1,
-  .back_3,
-  .back_2{
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-  
-  .layout{
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    z-index: 1;
-    background-color: rgba(0,0,0,.55);
-  }
 }
 
 .title{
@@ -100,19 +32,33 @@ html,body {
   z-index: 10;
 }
 
-.fixed{
-  position: fixed;
-  top: 200px;
-}
-
 .section_03{
   height: 2000px;
+  width: 100%;
+  padding: 200px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
-.purple{
-  color: #5052d0;
+.sec_3_main{
+  width: 80%;
+  min-width: 800px;
+  height: 1000px;
+  background: linear-gradient(to top, white 50%, #5052d0 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  .title{
+    width: 90%;
+    color: white;
+  }
 }
 
-.content_to_bottom{
-  align-items: flex-end;
+.browser{
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px;
 }
